@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="resources\appData.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\Character.h" />
+    <ClInclude Include="include\Cleric.h" />
+    <ClInclude Include="include\CollisionManager.h" />
+    <ClInclude Include="include\Door.h" />
+    <ClInclude Include="include\Enemy.h" />
+    <ClInclude Include="include\EnemyManager.h" />
+    <ClInclude Include="include\Entity.h" />
+    <ClInclude Include="include\ExitPortal.h" />
+    <ClInclude Include="include\Food.h" />
+    <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\GameOver.h" />
+    <ClInclude Include="include\GeneralManager.h" />
+    <ClInclude Include="include\GUI.h" />
+    <ClInclude Include="include\Key.h" />
+    <ClInclude Include="include\Mage.h" />
+    <ClInclude Include="include\MainMenu.h" />
+    <ClInclude Include="include\Map.h" />
+    <ClInclude Include="include\MeleeFoe.h" />
+    <ClInclude Include="include\MeleeFoeSpawner.h" />
+    <ClInclude Include="include\Player.h" />
+    <ClInclude Include="include\PlayerChoise.h" />
+    <ClInclude Include="include\Potion.h" />
+    <ClInclude Include="include\Program.h" />
+    <ClInclude Include="include\Projectile.h" />
+    <ClInclude Include="include\RangedFoe.h" />
+    <ClInclude Include="include\RangedFoeSpawner.h" />
+    <ClInclude Include="include\SoundSystem.h" />
+    <ClInclude Include="include\Spawner.h" />
+    <ClInclude Include="include\SpecialEnemy.h" />
+    <ClInclude Include="include\SpecialEnemySpawner.h" />
+    <ClInclude Include="include\Thief.h" />
+    <ClInclude Include="include\Tile.h" />
+    <ClInclude Include="include\Vector2.h" />
+    <ClInclude Include="include\Victory.h" />
+    <ClInclude Include="include\Warrior.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Camera.cpp" />
+    <ClCompile Include="source\Character.cpp" />
+    <ClCompile Include="source\Cleric.cpp" />
+    <ClCompile Include="source\CollisionManager.cpp" />
+    <ClCompile Include="source\Door.cpp" />
+    <ClCompile Include="source\Enemy.cpp" />
+    <ClCompile Include="source\EnemyManager.cpp" />
+    <ClCompile Include="source\Entity.cpp" />
+    <ClCompile Include="source\ExitPortal.cpp" />
+    <ClCompile Include="source\Food.cpp" />
+    <ClCompile Include="source\Game.cpp" />
+    <ClCompile Include="source\GameOver.cpp" />
+    <ClCompile Include="source\GeneralManager.cpp" />
+    <ClCompile Include="source\GUI.cpp" />
+    <ClCompile Include="source\Key.cpp" />
+    <ClCompile Include="source\Mage.cpp" />
+    <ClCompile Include="source\MainMenu.cpp" />
+    <ClCompile Include="source\Map.cpp" />
+    <ClCompile Include="source\MeleeFoe.cpp" />
+    <ClCompile Include="source\MeleeFoeSpawner.cpp" />
+    <ClCompile Include="source\Player.cpp" />
+    <ClCompile Include="source\Potion.cpp" />
+    <ClCompile Include="source\Program.cpp" />
+    <ClCompile Include="source\Projectile.cpp" />
+    <ClCompile Include="source\RangedFoe.cpp" />
+    <ClCompile Include="source\RangedFoeSpawner.cpp" />
+    <ClCompile Include="source\SoundSystem.cpp" />
+    <ClCompile Include="source\Spawner.cpp" />
+    <ClCompile Include="source\SpecialEnemy.cpp" />
+    <ClCompile Include="source\SpecialEnemySpawner.cpp" />
+    <ClCompile Include="source\Thief.cpp" />
+    <ClCompile Include="source\Tile.cpp" />
+    <ClCompile Include="source\Vector2.cpp" />
+    <ClCompile Include="source\Victory.cpp" />
+    <ClCompile Include="source\Warrior.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4CBDAA75-F009-4154-A2D4-2FEA7612E5D6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SpaceInvaders</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\</OutDir>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\</OutDir>
+    <TargetName>$(ProjectName)_$(Platform)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLM_SWIZZLE;GLM_FORCE_RADIANS;GLM_FORCE_PURE;GLEW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>include;..\FrameworkLib\include;..\deps\glew-1.13.0\include;..\deps\glfw-3.1.1\include;..\deps\glm;..\deps\soil\src;..\deps\tinyxml;..\deps\fmod\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\FrameworkLib\lib\$(Platform)\$(Configuration);..\deps\fmod\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>FrameworkLib.lib;FrameworkLib.res;fmod_vc.lib;fmod64_vc.lib;fmodL_vc.lib;fmodL64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLM_SWIZZLE;GLM_FORCE_RADIANS;GLM_FORCE_PURE;GLEW_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>include;..\FrameworkLib\include;..\deps\glew-1.13.0\include;..\deps\glfw-3.1.1\include;..\deps\glm;..\deps\soil\src;..\deps\tinyxml;..\deps\fmod\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\FrameworkLib\lib\$(Platform)\$(Configuration);..\deps\fmod\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>FrameworkLib.lib;FrameworkLib.res;fmod_vc.lib;fmod64_vc.lib;fmodL_vc.lib;fmodL64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
